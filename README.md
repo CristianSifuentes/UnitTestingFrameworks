@@ -15,6 +15,7 @@
 - [Impact and Challenges](#impact-and-challenges)
 - [Current Status (June 5, 2026)](#current-status-june-5-2026)
 - [Takeaways](#takeaways)
+ - [Framework Logos](#framework-logos)
 
 ---
 
@@ -23,6 +24,18 @@
 - **xUnit**: A modern, extensible, and open-source testing framework designed for .NET Core and .NET 5+.
 - **NUnit**: A widely-used, mature testing framework with rich features and extensibility.
 - **MSTest**: The Microsoft-provided testing framework tightly integrated with Visual Studio.
+
+---
+
+## Framework Logos
+
+Use these logos to visually represent the frameworks in your documentation.
+
+| Framework | Logo |
+|---|---|
+| xUnit | ![xUnit logo](assets/logos/xunit.svg) |
+| NUnit | ![NUnit logo](assets/logos/nunit.svg) |
+| MSTest | ![MSTest logo](assets/logos/mstest.svg) |
 
 ---
 
