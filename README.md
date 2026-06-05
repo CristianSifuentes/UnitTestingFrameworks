@@ -1,7 +1,5 @@
 # xUnit, NUnit, and MSTest: Frameworks for Unit Testing in .NET
 
-![Unit Testing](https://upload.wikimedia.org/wikipedia/commons/e/e0/Unit_test_icon.svg)
-
 ## Table of Contents
 
 - [What Are xUnit, NUnit, and MSTest?](#what-are-xunit-nunit-and-mstest)
