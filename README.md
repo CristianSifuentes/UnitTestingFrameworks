@@ -13,6 +13,7 @@
 - [Timeline: Evolution of Testing Frameworks](#timeline-evolution-of-testing-frameworks)
 - [Supported Platforms](#supported-platforms)
 - [Impact and Challenges](#impact-and-challenges)
+- [Current Status (June 5, 2026)](#current-status-june-5-2026)
 - [Takeaways](#takeaways)
 
 ---
@@ -110,6 +111,16 @@
    
 2. **Compatibility Issues**:  
    - Some features are limited based on the .NET version or platform.
+
+---
+
+## Current Status (June 5, 2026)
+
+- **xUnit**: xUnit.net v3 is the active release line and supports .NET 8 or later, with backward compatibility for .NET Framework 4.7.2 and later.
+- **NUnit**: Modern NUnit templates reference `nunit` 4.6.1, `NUnit3TestAdapter` 6.2.0, and `Microsoft.NET.Test.Sdk` 18.6.0 in current .NET documentation.
+- **MSTest**: Current MSTest documentation shows `MSTest` package version 4.1.0 in .NET test project templates and guidance updated in late 2025.
+
+These details reflect current framework support and package versions from official docs as of early June 2026.
 
 ---
 
