@@ -1,0 +1,13 @@
+<!-- MSTest.Sdk: el SDK de proyecto de MSTest. Trae framework, adaptador, analizadores y Microsoft.Testing.Platform. -->
+<Project Sdk="MSTest.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Tienda.Pruebas</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Tienda.Dominio/Tienda.Dominio.csproj" />
+    <Compile Include="../Comun/*.cs" Link="Comun/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

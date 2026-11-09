@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Tienda.Pruebas</RootNamespace>
+    <!-- El adaptador de NUnit ejecuta las pruebas sobre Microsoft.Testing.Platform -->
+    <OutputType>Exe</OutputType>
+    <EnableNUnitRunner>true</EnableNUnitRunner>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="NUnit.Analyzers" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" />
+    <!-- Informe TRX uniforme con MSTest: la opción report-trx sirve para toda la solución -->
+    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Tienda.Dominio/Tienda.Dominio.csproj" />
+    <Compile Include="../Comun/*.cs" Link="Comun/%(Filename)%(Extension)" />
+    <Using Include="NUnit.Framework" />
+  </ItemGroup>
+</Project>

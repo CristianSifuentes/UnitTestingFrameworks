@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- xUnit.net v3: cada proyecto de pruebas es un ejecutable -->
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tienda.Pruebas</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Microsoft.Extensions.TimeProvider.Testing" />
+    <!-- Informe TRX uniforme con MSTest: la opción report-trx sirve para toda la solución -->
+    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Tienda.Dominio/Tienda.Dominio.csproj" />
+    <Compile Include="../Comun/*.cs" Link="Comun/%(Filename)%(Extension)" />
+    <Using Include="Xunit" />
+  </ItemGroup>
+</Project>

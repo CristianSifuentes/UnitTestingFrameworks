@@ -1,0 +1,25 @@
+fecha,carril,hito,detalle,destacado
+1994,ancestros,SUnit,Kent Beck lo escribe en Smalltalk,1
+1997,ancestros,JUnit,Beck y Gamma lo llevan a Java,1
+2000,nunit,NUnit 1.0,Philip Craig porta JUnit a .NET,0
+2002,nunit,NUnit 2.0,Reescritura basada en atributos,1
+2005-11,mstest,MSTest v1,Visual Studio 2005 Team System,1
+2007,nunit,NUnit 2.4,Nacen las restricciones Assert.That,0
+2007-09,xunit,xUnit.net 1.0,Newkirk y Wilson: Fact y Theory,1
+2015-03,xunit,xUnit.net 2.0,Paralelismo por colecciones,1
+2015-11,nunit,NUnit 3.0,Reescritura y motor nuevo,1
+2016,plataforma,VSTest abierto,microsoft/vstest y dotnet test,0
+2016-06,mstest,MSTest v2,Código abierto y NuGet,1
+2022-12,mstest,MSTest 3.0,Una sola línea de paquetes,0
+2023-11,nunit,NUnit 4.0,ClassicAssert y Assert.That,1
+2024-01,plataforma,MTP 1.0,Microsoft.Testing.Platform,1
+2024-04,mstest,MSTest.Sdk,SDK de proyecto,0
+2024-12,xunit,xUnit.net v3 1.0,Pruebas como ejecutables,1
+2025-11,xunit,xUnit.net v3 3.2,Paquetes para MTP v2,0
+2025-10,mstest,MSTest 4.0,Assert.That y CallerArgumentExpression,1
+2025-10,plataforma,MTP 2.0,Segunda generación,0
+2025-11,plataforma,.NET 10 LTS,dotnet test en modo MTP,1
+2026-07,mstest,MSTest 4.3,AreEquivalent y generador,0
+2026-08,xunit,xUnit.net v3 4.0,Native AOT y paralelismo total,1
+2026-09,nunit,NUnit 5.0,Aserciones asíncronas reales,1
+2026-10,mstest,MSTest 4.5,Versión estable actual,0

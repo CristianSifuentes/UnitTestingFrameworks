@@ -1,0 +1,2077 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2530" height="2842" viewBox="0 0 2530 2842" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" role="img" aria-label="Tabla periódica de las pruebas en .NET">
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1020"/><stop offset="0.55" stop-color="#111739"/><stop offset="1" stop-color="#1B1040"/></linearGradient>
+<linearGradient id="arcoiris" x1="0" x2="1"><stop offset="0" stop-color="#F59E0B"/><stop offset="0.5" stop-color="#818CF8"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+<filter id="brillo" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="rejilla" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.035"/></pattern>
+</defs>
+<rect width="2530" height="2842" fill="url(#fondo)"/><rect width="2530" height="2842" fill="url(#rejilla)"/>
+<rect x="0" y="0" width="2530" height="6" fill="url(#arcoiris)"/>
+<text x="48" y="92" font-size="54" font-weight="800" fill="#F1F5F9" letter-spacing="-1">Tabla periódica de las pruebas en .NET</text>
+<text x="48" y="136" font-size="22" fill="#94A3B8">121 conceptos · su sintaxis en xUnit.net v3, NUnit 5 y MSTest 4 · edición noviembre 2026</text>
+<circle cx="61" cy="186" r="13" fill="#F59E0B"/>
+<text x="61" y="191" font-size="14" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="82" y="192" font-size="18" font-weight="600" fill="#F1F5F9">xUnit.net</text>
+<text x="82" y="214" font-size="13" fill="#94A3B8">92 conceptos nativos</text>
+<circle cx="291" cy="186" r="13" fill="#818CF8"/>
+<text x="291" y="191" font-size="14" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="312" y="192" font-size="18" font-weight="600" fill="#F1F5F9">NUnit</text>
+<text x="312" y="214" font-size="13" fill="#94A3B8">109 conceptos nativos</text>
+<circle cx="521" cy="186" r="13" fill="#38BDF8"/>
+<text x="521" y="191" font-size="14" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="542" y="192" font-size="18" font-weight="600" fill="#F1F5F9">MSTest</text>
+<text x="542" y="214" font-size="13" fill="#94A3B8">94 conceptos nativos</text>
+<text x="2482" y="192" font-size="15" fill="#94A3B8" text-anchor="end">— = sin equivalente nativo</text>
+<rect x="48" y="250" width="6" height="156" rx="3" fill="#A78BFA"/>
+<text x="70" y="280" font-size="20" font-weight="700" fill="#A78BFA">Definir pruebas</text>
+<text x="70" y="310" font-size="14" fill="#94A3B8">8 conceptos</text>
+<g transform="translate(258,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">1</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Pr</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Prueba simple</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Fact]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Test]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestMethod]</text>
+</g>
+<g transform="translate(444,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">2</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Cl</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Clase de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">pruebas</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">cualquier clase pública</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestFixture] (opcional)</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestClass]</text>
+</g>
+<g transform="translate(630,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">3</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Pp</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Prueba</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">parametrizada</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Theory]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCase] · [TestCaseS…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestMethod] + [DataRow]</text>
+</g>
+<g transform="translate(816,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">4</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Ab</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Prueba</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">asíncrona</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">async Task · ValueTask</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">async Task</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">async Task</text>
+</g>
+<g transform="translate(1002,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">5</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Dn</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Nombre visible</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Fact(DisplayName = …)]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCase(…, TestName =…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestMethod(DisplayName…</text>
+</g>
+<g transform="translate(1188,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">6</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Xp</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Prueba</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">explícita</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Fact(Explicit = true)]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Explicit]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1374,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">7</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Gf</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fixture</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">genérica</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestFixture(typeof(T))]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1560,250)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A78BFA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A78BFA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">8</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A78BFA">Hb</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Pruebas</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">heredadas</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">herencia de clases</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">herencia de clases</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">herencia + [TestClass] …</text>
+</g>
+<rect x="48" y="428" width="6" height="320" rx="3" fill="#F472B6"/>
+<text x="70" y="458" font-size="20" font-weight="700" fill="#F472B6">Datos y</text>
+<text x="70" y="482" font-size="20" font-weight="700" fill="#F472B6">parametrización</text>
+<text x="70" y="512" font-size="14" fill="#94A3B8">15 conceptos</text>
+<g transform="translate(258,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">9</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Il</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Datos en línea</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[InlineData]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCase]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[DataRow]</text>
+</g>
+<g transform="translate(444,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">10</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Md</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Datos de un</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">miembro</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[MemberData]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCaseSource]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[DynamicData]</text>
+</g>
+<g transform="translate(630,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">11</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Cd</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Datos de otra</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">clase</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[ClassData]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCaseSource(typeof(…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[DynamicData(…, typeof(…</text>
+</g>
+<g transform="translate(816,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">12</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Td</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Datos tipados</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TheoryData&lt;T…&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestCaseData&lt;T…&gt;</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestDataRow&lt;T&gt;</text>
+</g>
+<g transform="translate(1002,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">13</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Fr</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fila con</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">metadatos</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TheoryDataRow&lt;T…&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestCaseData .SetName()…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestDataRow&lt;T&gt; { Displa…</text>
+</g>
+<g transform="translate(1188,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">14</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Er</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Resultado</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">esperado</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ExpectedResult = …</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1374,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">15</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Mx</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Matriz</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">combinatoria</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">MatrixTheoryData&lt;T1, T2&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Values] · [Combinatori…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1560,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">16</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Rg</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Rango numérico</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Range(a, b, paso)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1746,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">17</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Ra</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Valores</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">aleatorios</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Random(min, max, n)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1932,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">18</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Pw</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Combinación por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">pares</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Pairwise]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(2118,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">19</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Sq</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Combinación</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">secuencial</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Sequential]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(2304,428)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">20</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Vs</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fuente por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">parámetro</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[ValueSource]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(258,592)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">21</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Dp</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Teorías con</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">datapoints</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Theory] + [Datapoint]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(444,592)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">22</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Ad</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Atributo de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">datos propio</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">DataAttribute derivado</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ITestCaseSource · ITest…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ITestDataSource</text>
+</g>
+<g transform="translate(630,592)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F472B6" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F472B6"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">23</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F472B6">Uf</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Despliegue de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">casos</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">DisableDiscoveryEnumera…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">siempre despliega</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">UnfoldingStrategy en [T…</text>
+</g>
+<rect x="48" y="770" width="6" height="320" rx="3" fill="#34D399"/>
+<text x="70" y="800" font-size="20" font-weight="700" fill="#34D399">Ciclo de vida y</text>
+<text x="70" y="824" font-size="20" font-weight="700" fill="#34D399">fixtures</text>
+<text x="70" y="854" font-size="14" fill="#94A3B8">13 conceptos</text>
+<g transform="translate(258,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">24</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Su</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Preparación por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">constructor</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[SetUp]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestInitialize] · cons…</text>
+</g>
+<g transform="translate(444,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">25</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Lp</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Limpieza por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">IDisposable · IAsyncDis…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TearDown]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCleanup] · Dispose</text>
+</g>
+<g transform="translate(630,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">26</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Al</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Preparación</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">asíncrona</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">IAsyncLifetime</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">async [SetUp]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">async [TestInitialize]</text>
+</g>
+<g transform="translate(816,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">27</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Cf</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fixture de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">clase</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">IClassFixture&lt;T&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[OneTimeSetUp]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[ClassInitialize]</text>
+</g>
+<g transform="translate(1002,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">28</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Cc</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Limpieza de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">clase</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Dispose del fixture</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[OneTimeTearDown]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[ClassCleanup]</text>
+</g>
+<g transform="translate(1188,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">29</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Co</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fixture de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">colección</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ICollectionFixture&lt;T&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[SetUpFixture] por name…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1374,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">30</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Af</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fixture de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">ensamblado</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[assembly: AssemblyFixt…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[SetUpFixture] sin name…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[AssemblyInitialize]</text>
+</g>
+<g transform="translate(1560,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">31</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Gh</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Gancho global</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">por prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">BeforeAfterTestAttribute</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ITestAction</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[GlobalTestInitialize]</text>
+</g>
+<g transform="translate(1746,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">32</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Ip</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Instancia por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">siempre</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[FixtureLifeCycle(Insta…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">siempre</text>
+</g>
+<g transform="translate(1932,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">33</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Ci</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Inyección por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">constructor</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">fixtures · ITestOutputH…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">argumentos de [TestFixt…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext</text>
+</g>
+<g transform="translate(2118,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">34</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Nl</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fixture</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">notificada</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">INotifyTestLifecycle (4…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(2304,770)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">35</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Ot</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Orden de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">ejecución</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCaseOrderer] · ord…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Order] (obsoleto en 5.…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(258,934)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#34D399" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#34D399"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">36</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#34D399">Dt</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Dependencias</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">entre pruebas</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[DependsOnTest] (5.0)</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<rect x="48" y="1112" width="6" height="320" rx="3" fill="#60A5FA"/>
+<text x="70" y="1142" font-size="20" font-weight="700" fill="#60A5FA">Aserciones</text>
+<text x="70" y="1172" font-size="14" fill="#94A3B8">19 conceptos</text>
+<g transform="translate(258,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">37</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Eq</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Igualdad</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Equal</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.EqualTo</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreEqual</text>
+</g>
+<g transform="translate(444,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">38</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ne</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Desigualdad</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.NotEqual</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.Not.EqualTo</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreNotEqual</text>
+</g>
+<g transform="translate(630,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">39</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Tr</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Verdadero</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.True</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.True</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsTrue</text>
+</g>
+<g transform="translate(816,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">40</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Fa</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Falso</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.False</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.False</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsFalse</text>
+</g>
+<g transform="translate(1002,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">41</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Nu</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Nulo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Null</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.Null</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsNull</text>
+</g>
+<g transform="translate(1188,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">42</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Nn</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">No nulo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.NotNull</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.Not.Null</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsNotNull</text>
+</g>
+<g transform="translate(1374,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">43</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Sa</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Misma</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">referencia</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Same</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.SameAs</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreSame</text>
+</g>
+<g transform="translate(1560,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">44</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ty</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Tipo exacto</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsType&lt;T&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.TypeOf&lt;T&gt;</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsExactInstanceO…</text>
+</g>
+<g transform="translate(1746,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">45</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">As</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Tipo asignable</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsAssignableFrom…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.InstanceOf&lt;T&gt;</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsInstanceOfType…</text>
+</g>
+<g transform="translate(1932,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">46</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Tl</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Tolerancia</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">numérica</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Equal(a, b, tole…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.EqualTo(x).Within(t)</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreEqual(a, b, d…</text>
+</g>
+<g transform="translate(2118,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">47</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ir</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Dentro de un</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">rango</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.InRange</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.InRange</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsInRange</text>
+</g>
+<g transform="translate(2304,1112)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">48</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Gt</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Mayor que</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.GreaterThan</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsGreaterThan</text>
+</g>
+<g transform="translate(258,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">49</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ev</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Equivalencia</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">estructural</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Equivalent</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">UsingPropertiesComparer…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreEquivalent (4…</text>
+</g>
+<g transform="translate(444,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">50</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ex</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Expresión libre</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.True(expr)</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.That(bool)</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.That(() =&gt; expr)</text>
+</g>
+<g transform="translate(630,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">51</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Mu</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Aserciones</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">múltiples</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Multiple</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.EnterMultipleSco…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(816,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">52</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Fl</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Fallo explícito</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Fail</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Fail</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Fail</text>
+</g>
+<g transform="translate(1002,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">53</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Wn</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Advertencia</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Warn · Warn.If</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1188,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">54</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ps</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Pase explícito</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Pass</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1374,1276)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#60A5FA" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#60A5FA"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">55</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#60A5FA">Ic</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Inconcluso</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Inconclusive</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Inconclusive</text>
+</g>
+<rect x="48" y="1454" width="6" height="320" rx="3" fill="#2DD4BF"/>
+<text x="70" y="1484" font-size="20" font-weight="700" fill="#2DD4BF">Colecciones y</text>
+<text x="70" y="1508" font-size="20" font-weight="700" fill="#2DD4BF">texto</text>
+<text x="70" y="1538" font-size="14" fill="#94A3B8">15 conceptos</text>
+<g transform="translate(258,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">56</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Em</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Colección vacía</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Empty</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.Empty</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.IsEmpty</text>
+</g>
+<g transform="translate(444,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">57</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Ct</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Contiene</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Contains</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Does.Contain · Has.Memb…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Contains</text>
+</g>
+<g transform="translate(630,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">58</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Sg</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Un único</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">elemento</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Single</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Has.Exactly(1).Items</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.ContainsSingle</text>
+</g>
+<g transform="translate(816,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">59</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Cn</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Número de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">elementos</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Equal(n, c.Count)</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Has.Count.EqualTo(n)</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.HasCount</text>
+</g>
+<g transform="translate(1002,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">60</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Ae</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Todos cumplen</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.All</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Has.All</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreAllNotNull · …</text>
+</g>
+<g transform="translate(1188,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">61</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Ec</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Inspector por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">elemento</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Collection</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1374,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">62</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Or</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Ordenada</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.Ordered</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1560,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">63</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Di</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Sin duplicados</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Distinct</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.Unique</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreAllDistinct</text>
+</g>
+<g transform="translate(1746,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">64</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Se</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Misma secuencia</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Equal(seq, seq)</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.EqualTo(seq)</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreSequenceEqual…</text>
+</g>
+<g transform="translate(1932,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">65</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Ss</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Subconjunto</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Subset</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.SubsetOf</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">CollectionAssert.IsSubs…</text>
+</g>
+<g transform="translate(2118,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">66</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Eo</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Mismos</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">elementos, otro</text>
+<text x="168" y="56" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">orden</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.EquivalentTo</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">CollectionAssert.AreEqu…</text>
+</g>
+<g transform="translate(2304,1454)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">67</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Sw</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Empieza con</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.StartsWith</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Does.StartWith</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.StartsWith</text>
+</g>
+<g transform="translate(258,1618)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">68</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Rx</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Expresión</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">regular</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Matches</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Does.Match</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.MatchesRegex</text>
+</g>
+<g transform="translate(444,1618)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">69</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Ig</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Sin mayúsculas</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Equal(a, b, igno…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Is.EqualTo(x).IgnoreCase</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.AreEqual(a, b, i…</text>
+</g>
+<g transform="translate(630,1618)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#2DD4BF" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#2DD4BF"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">70</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#2DD4BF">Ky</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Clave de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">diccionario</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Contains(clave, …</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Does.ContainKey</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Contains(clave, …</text>
+</g>
+<rect x="48" y="1796" width="6" height="156" rx="3" fill="#F87171"/>
+<text x="70" y="1826" font-size="20" font-weight="700" fill="#F87171">Excepciones y</text>
+<text x="70" y="1850" font-size="20" font-weight="700" fill="#F87171">asincronía</text>
+<text x="70" y="1880" font-size="14" fill="#94A3B8">9 conceptos</text>
+<g transform="translate(258,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">71</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Th</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Lanza el tipo</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">exacto</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Throws&lt;T&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Throws.TypeOf&lt;T&gt;</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.ThrowsExactly&lt;T&gt;</text>
+</g>
+<g transform="translate(444,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">72</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Ta</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Lanza un tipo</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">derivado</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.ThrowsAny&lt;T&gt;</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Throws.InstanceOf&lt;T&gt;</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Throws&lt;T&gt;</text>
+</g>
+<g transform="translate(630,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">73</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Tx</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Lanza en</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">asíncrono</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">await Assert.ThrowsAsyn…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">await Assert.ThrowsAsyn…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">await Assert.ThrowsExac…</text>
+</g>
+<g transform="translate(816,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">74</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Pn</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Nombre del</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">parámetro</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Throws&lt;T&gt;("param…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">.ParamName.EqualTo(…) (…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ex.ParamName</text>
+</g>
+<g transform="translate(1002,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">75</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Nt</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">No lanza</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ejecutar el código</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Throws.Nothing</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1188,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">76</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Xe</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Excepción</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">esperada por</text>
+<text x="168" y="56" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">atributo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">nunca existió</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">eliminado en NUnit 3</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">eliminado en MSTest 4</text>
+</g>
+<g transform="translate(1374,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">77</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Tk</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Token de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">cancelación</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Current.Can…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">parámetro CancellationT…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Cancellatio…</text>
+</g>
+<g transform="translate(1560,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">78</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Rs</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Eventos</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Raises · RaisesA…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1746,1796)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#F87171" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#F87171"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">79</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#F87171">Pc</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">PropertyChanged</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.PropertyChanged</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<rect x="48" y="1974" width="6" height="156" rx="3" fill="#FACC15"/>
+<text x="70" y="2004" font-size="20" font-weight="700" fill="#FACC15">Omisión y</text>
+<text x="70" y="2028" font-size="20" font-weight="700" fill="#FACC15">metadatos</text>
+<text x="70" y="2058" font-size="14" fill="#94A3B8">12 conceptos</text>
+<g transform="translate(258,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">80</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Sk</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Omitir</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Fact(Skip = "…")]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Ignore("…")]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Ignore("…")]</text>
+</g>
+<g transform="translate(444,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">81</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Sd</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Omitir en</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">ejecución</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Skip · SkipWhen</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Ignore</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Assert.Inconclusive</text>
+</g>
+<g transform="translate(630,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">82</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Iu</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Omitir hasta</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">una fecha</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Ignore(Until = …)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(816,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">83</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Ca</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Categoría</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Trait("Category", …)]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Category]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestCategory]</text>
+</g>
+<g transform="translate(1002,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">84</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Pt</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Propiedad</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">clave-valor</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Trait(k, v)]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Property(k, v)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[TestProperty(k, v)]</text>
+</g>
+<g transform="translate(1188,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">85</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Os</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Sistema</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">operativo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">SkipUnless + OperatingS…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Platform("Win")]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[OSCondition]</text>
+</g>
+<g transform="translate(1374,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">86</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Cs</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Solo en</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">integración</text>
+<text x="168" y="56" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">continua</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[CICondition]</text>
+</g>
+<g transform="translate(1560,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">87</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Cu</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Cultura</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">culture en xunit.runner…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[SetCulture]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1746,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">88</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">De</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Descripción</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Description]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Description]</text>
+</g>
+<g transform="translate(1932,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">89</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Au</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Autor</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Author]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Owner]</text>
+</g>
+<g transform="translate(2118,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">90</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Wi</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Elemento de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">trabajo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[WorkItem] · [GitHubWor…</text>
+</g>
+<g transform="translate(2304,1974)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FACC15" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FACC15"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">91</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FACC15">Py</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Prioridad</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Priority]</text>
+</g>
+<rect x="48" y="2152" width="6" height="156" rx="3" fill="#FB923C"/>
+<text x="70" y="2182" font-size="20" font-weight="700" fill="#FB923C">Paralelismo y</text>
+<text x="70" y="2206" font-size="20" font-weight="700" fill="#FB923C">tiempo</text>
+<text x="70" y="2236" font-size="14" fill="#94A3B8">11 conceptos</text>
+<g transform="translate(258,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">92</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Pd</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Paralelismo por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">defecto</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">entre colecciones</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">desactivado</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">desactivado</text>
+</g>
+<g transform="translate(444,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">93</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Pz</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Activar</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">paralelismo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">activo por defecto · mo…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Parallelizable(Paralle…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[assembly: Parallelize]</text>
+</g>
+<g transform="translate(630,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">94</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Np</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Desactivar en</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">un punto</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[CollectionDefinition(D…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[NonParallelizable]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[DoNotParallelize]</text>
+</g>
+<g transform="translate(816,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">95</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Wk</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Grado de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">paralelismo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">maxParallelThreads</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[LevelOfParallelism(n)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Parallelize(Workers = n)</text>
+</g>
+<g transform="translate(1002,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">96</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Rl</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Exclusión por</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">recurso</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">misma [Collection]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[ResourceLock] (4.4)</text>
+</g>
+<g transform="translate(1188,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">97</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">To</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Tiempo máximo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Fact(Timeout = ms)]</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[CancelAfter(ms)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Timeout(ms)]</text>
+</g>
+<g transform="translate(1374,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">98</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Mt</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Duración medida</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[MaxTime(ms, WarningTim…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1560,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">99</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Re</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Reintento</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Retry(n)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Retry(n)]</text>
+</g>
+<g transform="translate(1746,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">100</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Rp</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Repetición</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Repeat(n)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="0.25"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+</g>
+<g transform="translate(1932,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">101</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">St</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Hilo STA</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[Apartment(STA)]</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">[STATestMethod]</text>
+</g>
+<g transform="translate(2118,2152)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#FB923C" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#FB923C"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">102</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#FB923C">Ro</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Orden aleatorio</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">opción de orden aleator…</text>
+</g>
+<rect x="48" y="2330" width="6" height="156" rx="3" fill="#A3E635"/>
+<text x="70" y="2360" font-size="20" font-weight="700" fill="#A3E635">Contexto y</text>
+<text x="70" y="2384" font-size="20" font-weight="700" fill="#A3E635">diagnóstico</text>
+<text x="70" y="2414" font-size="14" fill="#94A3B8">8 conceptos</text>
+<g transform="translate(258,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">103</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Tc</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Contexto de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Current</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.CurrentCont…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext</text>
+</g>
+<g transform="translate(444,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">104</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Ou</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Salida de la</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ITestOutputHelper</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Out</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.WriteLine</text>
+</g>
+<g transform="translate(630,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">105</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">At</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Adjuntos</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Current.Add…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.AddTestAtta…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.AddResultFi…</text>
+</g>
+<g transform="translate(816,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">106</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Tn</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Nombre de la</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">prueba</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Test.TestDisplayName</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Test.Name</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.TestName</text>
+</g>
+<g transform="translate(1002,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">107</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Ts</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Resultado en la</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">limpieza</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Current.Tes…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Result.Outcome</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">CurrentTestOutcome</text>
+</g>
+<g transform="translate(1188,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">108</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Kv</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Almacén</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">clave-valor</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">KeyValueStorage</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">Test.Properties</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Properties</text>
+</g>
+<g transform="translate(1374,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">109</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Wd</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Directorio de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">trabajo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">WorkDirectory</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestRunDirectory · Test…</text>
+</g>
+<g transform="translate(1560,2330)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#A3E635" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#A3E635"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">110</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#A3E635">Dm</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Diagnóstico en</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">vivo</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">SendDiagnosticMessage</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestContext.Progress</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestOutputCaptureMode (…</text>
+</g>
+<rect x="48" y="2508" width="6" height="156" rx="3" fill="#CBD5E1"/>
+<text x="70" y="2538" font-size="20" font-weight="700" fill="#CBD5E1">Plataforma y</text>
+<text x="70" y="2562" font-size="20" font-weight="700" fill="#CBD5E1">herramientas</text>
+<text x="70" y="2592" font-size="14" fill="#94A3B8">11 conceptos</text>
+<g transform="translate(258,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">111</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Pk</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Paquete</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">principal</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">xunit.v3</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">NUnit</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">MSTest · MSTest.Sdk</text>
+</g>
+<g transform="translate(444,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">112</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Va</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Adaptador</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">VSTest</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">xunit.runner.visualstud…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">NUnit3TestAdapter</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">MSTest.TestAdapter</text>
+</g>
+<g transform="translate(630,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">113</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Mp</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Microsoft.Testing.Platform</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">integrado (v2 por defec…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">EnableNUnitRunner</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">EnableMSTestRunner</text>
+</g>
+<g transform="translate(816,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">114</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Cg</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Configuración</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">xunit.runner.json</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">NUnit en .runsettings</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">testconfig.json · .runs…</text>
+</g>
+<g transform="translate(1002,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">115</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Az</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Analizadores</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">xunit.analyzers (inclui…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">NUnit.Analyzers</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">MSTest.Analyzers (inclu…</text>
+</g>
+<g transform="translate(1188,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">116</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Ao</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Native AOT</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">xunit.v3.core.aot (4.0)</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">generación de código (e…</text>
+</g>
+<g transform="translate(1374,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">117</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Ep</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Punto de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">extensión</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ITestFramework · DataAt…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">ITestAction · IWrapTest…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestMethodAttribute · C…</text>
+</g>
+<g transform="translate(1560,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">118</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Cr</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Ejecutor de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">consola</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">xunit.v3.runner.console</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">nunit3-console · NUnitL…</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">el propio ejecutable</text>
+</g>
+<g transform="translate(1746,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">119</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Fi</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Filtrado</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">--filter-class · --filt…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">--filter "Category=X"</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">--filter "TestCategory=…</text>
+</g>
+<g transform="translate(1932,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">120</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Rt</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Formato de</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">resultados</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="1"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">XML xUnit · JUnit · CTR…</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="1"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TestResult.xml · TRX</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">TRX</text>
+</g>
+<g transform="translate(2118,2508)">
+<rect width="178" height="156" rx="12" fill="#121A33" stroke="#CBD5E1" stroke-opacity="0.55"/>
+<rect width="178" height="5" rx="2.5" fill="#CBD5E1"/>
+<text x="12" y="25" font-size="12" fill="#94A3B8">121</text>
+<text x="12" y="58" font-size="32" font-weight="800" fill="#CBD5E1">Pa</text>
+<text x="168" y="24" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">Particionado en</text>
+<text x="168" y="40" font-size="12.5" font-weight="600" fill="#F1F5F9" text-anchor="end">CI</text>
+<circle cx="19" cy="82" r="7.5" fill="#F59E0B" fill-opacity="0.25"/>
+<text x="19" y="86" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">x</text>
+<text x="32" y="86" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="104" r="7.5" fill="#818CF8" fill-opacity="0.25"/>
+<text x="19" y="108" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">N</text>
+<text x="32" y="108" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#94A3B8" fill-opacity="0.55">—</text>
+<circle cx="19" cy="126" r="7.5" fill="#38BDF8" fill-opacity="1"/>
+<text x="19" y="130" font-size="9.5" font-weight="800" fill="#0B1020" text-anchor="middle">M</text>
+<text x="32" y="130" font-size="10" font-family="Cascadia Code, JetBrains Mono, SFMono-Regular, Menlo, Consolas, monospace" fill="#F1F5F9" fill-opacity="0.92">--partition (5.0)</text>
+</g>
+<line x1="48" y1="2716" x2="2482" y2="2716" stroke="#FFFFFF" stroke-opacity="0.08"/>
+<text x="48" y="2758" font-size="16" fill="#94A3B8">Generado desde data/equivalencias.csv con tools/generar_atlas.py · cada API se compiló contra xunit.v3 4.0.2, NUnit 5.0.0 y MSTest 4.5.2</text>
+<text x="2482" y="2758" font-size="16" font-weight="700" fill="url(#arcoiris)" text-anchor="end">Atlas de Pruebas .NET</text>
+</svg>

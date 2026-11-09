@@ -1,0 +1,52 @@
+# Integración continua del Atlas de Pruebas .NET:
+# ejecuta el laboratorio (tres frameworks), verifica cada ejemplo de la documentación
+# y comprueba que el catálogo y los SVG generados están al día.
+name: atlas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  laboratorio:
+    name: Laboratorio · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - name: Ejecutar las 99 pruebas (modo MTP de dotnet test)
+        run: dotnet test --report-trx --results-directory artefactos/pruebas
+        env:
+          DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+          TESTINGPLATFORM_TELEMETRY_OPTOUT: "1"
+      - name: Publicar resultados TRX
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultados-${{ matrix.os }}
+          path: artefactos/pruebas
+
+  documentacion:
+    name: Ejemplos y artefactos generados
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compilar y ejecutar cada bloque csharp de los capítulos
+        run: python3 tools/verificar_ejemplos.py
+      - name: El catálogo y los SVG coinciden con los CSV
+        run: |
+          python3 tools/generar_atlas.py
+          git diff --exit-code -- docs/17-catalogo-a-z.md assets/

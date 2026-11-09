@@ -1,0 +1,122 @@
+numero,simbolo,concepto,familia,xunit,nunit,mstest,nota
+1,Pr,Prueba simple,definicion,[Fact],[Test],[TestMethod],
+2,Cl,Clase de pruebas,definicion,cualquier clase pública,[TestFixture] (opcional),[TestClass],MSTest exige el atributo; xUnit y NUnit descubren por métodos
+3,Pp,Prueba parametrizada,definicion,[Theory],[TestCase] · [TestCaseSource],[TestMethod] + [DataRow],[DataTestMethod] es redundante y se elimina en MSTest 5
+4,Ab,Prueba asíncrona,definicion,async Task · ValueTask,async Task,async Task,async void no está soportado en ninguno
+5,Dn,Nombre visible,definicion,[Fact(DisplayName = …)],"[TestCase(…, TestName = …)]",[TestMethod(DisplayName = …)],
+6,Xp,Prueba explícita,definicion,[Fact(Explicit = true)],[Explicit],—,Solo se ejecuta si se pide por nombre o filtro
+7,Gf,Fixture genérica,definicion,—,[TestFixture(typeof(T))],—,NUnit instancia la clase una vez por argumento de tipo
+8,Hb,Pruebas heredadas,definicion,herencia de clases,herencia de clases,herencia + [TestClass] en la derivada,MSTEST0069 avisa si falta [TestClass] en la derivada
+9,Il,Datos en línea,datos,[InlineData],[TestCase],[DataRow],Solo constantes: decimal no es válido en atributos
+10,Md,Datos de un miembro,datos,[MemberData],[TestCaseSource],[DynamicData],MSTest acepta tuplas y propiedades sin especificar el tipo de origen
+11,Cd,Datos de otra clase,datos,[ClassData],[TestCaseSource(typeof(T))],"[DynamicData(…, typeof(T))]",
+12,Td,Datos tipados,datos,TheoryData<T…>,TestCaseData<T…>,TestDataRow<T>,TestCaseData genérico desde NUnit 4.1
+13,Fr,Fila con metadatos,datos,TheoryDataRow<T…>,TestCaseData .SetName() · .Ignore(),TestDataRow<T> { DisplayName },Permiten omitir o renombrar un caso concreto
+14,Er,Resultado esperado,datos,—,ExpectedResult = …,—,En NUnit el método devuelve el valor y el framework compara
+15,Mx,Matriz combinatoria,datos,"MatrixTheoryData<T1, T2>",[Values] · [Combinatorial],—,Producto cartesiano de los valores
+16,Rg,Rango numérico,datos,—,"[Range(a, b, paso)]",—,
+17,Ra,Valores aleatorios,datos,—,"[Random(min, max, n)]",—,La semilla se registra para reproducir el fallo
+18,Pw,Combinación por pares,datos,—,[Pairwise],—,Cubre cada par de valores con menos casos
+19,Sq,Combinación secuencial,datos,—,[Sequential],—,
+20,Vs,Fuente por parámetro,datos,—,[ValueSource],—,
+21,Dp,Teorías con datapoints,datos,—,[Theory] + [Datapoint],—,El [Theory] de NUnit es distinto del de xUnit
+22,Ad,Atributo de datos propio,datos,DataAttribute derivado,ITestCaseSource · ITestBuilder,ITestDataSource,"Puerta de extensión para leer CSV, JSON o bases de datos"
+23,Uf,Despliegue de casos,datos,DisableDiscoveryEnumeration,siempre despliega,UnfoldingStrategy en [TestMethod],Decide si cada fila es un caso visible en el explorador
+24,Su,Preparación por prueba,ciclo,constructor,[SetUp],[TestInitialize] · constructor,
+25,Lp,Limpieza por prueba,ciclo,IDisposable · IAsyncDisposable,[TearDown],[TestCleanup] · Dispose,
+26,Al,Preparación asíncrona,ciclo,IAsyncLifetime,async [SetUp],async [TestInitialize],
+27,Cf,Fixture de clase,ciclo,IClassFixture<T>,[OneTimeSetUp],[ClassInitialize],Se ejecuta una vez por clase
+28,Cc,Limpieza de clase,ciclo,Dispose del fixture,[OneTimeTearDown],[ClassCleanup],
+29,Co,Fixture de colección,ciclo,ICollectionFixture<T>,[SetUpFixture] por namespace,—,Comparte estado entre varias clases
+30,Af,Fixture de ensamblado,ciclo,[assembly: AssemblyFixture],[SetUpFixture] sin namespace,[AssemblyInitialize],
+31,Gh,Gancho global por prueba,ciclo,BeforeAfterTestAttribute,ITestAction,[GlobalTestInitialize],Código que rodea a todas las pruebas
+32,Ip,Instancia por prueba,ciclo,siempre,[FixtureLifeCycle(InstancePerTestCase)],siempre,NUnit comparte una instancia por defecto
+33,Ci,Inyección por constructor,ciclo,fixtures · ITestOutputHelper,argumentos de [TestFixture],TestContext,MSTest admite TestContext en el constructor desde 3.6
+34,Nl,Fixture notificada,ciclo,INotifyTestLifecycle (4.0),—,—,Una fixture compartida reacciona a cada prueba
+35,Ot,Orden de ejecución,ciclo,[TestCaseOrderer] · orderers (4.0),[Order] (obsoleto en 5.0),—,Depender del orden es un olor de diseño
+36,Dt,Dependencias entre pruebas,ciclo,—,[DependsOnTest] (5.0),—,Novedad de NUnit 5
+37,Eq,Igualdad,aserciones,Assert.Equal,Is.EqualTo,Assert.AreEqual,"Orden: esperado, real; NUnit: real, restricción"
+38,Ne,Desigualdad,aserciones,Assert.NotEqual,Is.Not.EqualTo,Assert.AreNotEqual,
+39,Tr,Verdadero,aserciones,Assert.True,Is.True,Assert.IsTrue,
+40,Fa,Falso,aserciones,Assert.False,Is.False,Assert.IsFalse,
+41,Nu,Nulo,aserciones,Assert.Null,Is.Null,Assert.IsNull,
+42,Nn,No nulo,aserciones,Assert.NotNull,Is.Not.Null,Assert.IsNotNull,MSTest 5 devolverá el valor no nulo
+43,Sa,Misma referencia,aserciones,Assert.Same,Is.SameAs,Assert.AreSame,NUnit 5 lo restringe a tipos por referencia
+44,Ty,Tipo exacto,aserciones,Assert.IsType<T>,Is.TypeOf<T>,Assert.IsExactInstanceOfType<T>,
+45,As,Tipo asignable,aserciones,Assert.IsAssignableFrom<T>,Is.InstanceOf<T>,Assert.IsInstanceOfType<T>,Todas devuelven el valor convertido
+46,Tl,Tolerancia numérica,aserciones,"Assert.Equal(a, b, tolerancia)",Is.EqualTo(x).Within(t),"Assert.AreEqual(a, b, delta)",
+47,Ir,Dentro de un rango,aserciones,Assert.InRange,Is.InRange,Assert.IsInRange,
+48,Gt,Mayor que,aserciones,—,Is.GreaterThan,Assert.IsGreaterThan,
+49,Ev,Equivalencia estructural,aserciones,Assert.Equivalent,UsingPropertiesComparer() (mismo tipo),Assert.AreEquivalent (4.3),xUnit ignora el orden de las colecciones; MSTest lo respeta
+50,Ex,Expresión libre,aserciones,Assert.True(expr),Assert.That(bool),Assert.That(() => expr),MSTest 4 explica la expresión que falló
+51,Mu,Aserciones múltiples,aserciones,Assert.Multiple,Assert.EnterMultipleScope,—,"Informa todos los fallos, no solo el primero"
+52,Fl,Fallo explícito,aserciones,Assert.Fail,Assert.Fail,Assert.Fail,
+53,Wn,Advertencia,aserciones,—,Assert.Warn · Warn.If,—,La prueba pasa con advertencia
+54,Ps,Pase explícito,aserciones,—,Assert.Pass,—,
+55,Ic,Inconcluso,aserciones,—,Assert.Inconclusive,Assert.Inconclusive,
+56,Em,Colección vacía,colecciones,Assert.Empty,Is.Empty,Assert.IsEmpty,
+57,Ct,Contiene,colecciones,Assert.Contains,Does.Contain · Has.Member,Assert.Contains,
+58,Sg,Un único elemento,colecciones,Assert.Single,Has.Exactly(1).Items,Assert.ContainsSingle,xUnit y MSTest devuelven el elemento
+59,Cn,Número de elementos,colecciones,"Assert.Equal(n, c.Count)",Has.Count.EqualTo(n),Assert.HasCount,
+60,Ae,Todos cumplen,colecciones,Assert.All,Has.All,Assert.AreAllNotNull · AreAllOfType,MSTest 4.3 añadió la familia AreAll*
+61,Ec,Inspector por elemento,colecciones,Assert.Collection,—,—,Una lambda por posición
+62,Or,Ordenada,colecciones,—,Is.Ordered,—,
+63,Di,Sin duplicados,colecciones,Assert.Distinct,Is.Unique,Assert.AreAllDistinct,
+64,Se,Misma secuencia,colecciones,"Assert.Equal(seq, seq)",Is.EqualTo(seq),Assert.AreSequenceEqual (4.3),MSTEST0065 avisa de AreEqual sobre colecciones
+65,Ss,Subconjunto,colecciones,Assert.Subset,Is.SubsetOf,CollectionAssert.IsSubsetOf,
+66,Eo,"Mismos elementos, otro orden",colecciones,—,Is.EquivalentTo,CollectionAssert.AreEquivalent,
+67,Sw,Empieza con,colecciones,Assert.StartsWith,Does.StartWith,Assert.StartsWith,
+68,Rx,Expresión regular,colecciones,Assert.Matches,Does.Match,Assert.MatchesRegex,
+69,Ig,Sin mayúsculas,colecciones,"Assert.Equal(a, b, ignoreCase: true)",Is.EqualTo(x).IgnoreCase,"Assert.AreEqual(a, b, ignoreCase: true)",
+70,Ky,Clave de diccionario,colecciones,"Assert.Contains(clave, dic)",Does.ContainKey,"Assert.Contains(clave, dic.Keys)",
+71,Th,Lanza el tipo exacto,excepciones,Assert.Throws<T>,Throws.TypeOf<T>,Assert.ThrowsExactly<T>,Las tres devuelven la excepción
+72,Ta,Lanza un tipo derivado,excepciones,Assert.ThrowsAny<T>,Throws.InstanceOf<T>,Assert.Throws<T>,Ojo: Throws significa cosas distintas en xUnit y MSTest
+73,Tx,Lanza en asíncrono,excepciones,await Assert.ThrowsAsync<T>,await Assert.ThrowsAsync<T>,await Assert.ThrowsExactlyAsync<T>,En NUnit 5 hay que esperar con await
+74,Pn,Nombre del parámetro,excepciones,"Assert.Throws<T>(""param"", …)",.ParamName.EqualTo(…) (5.0),ex.ParamName,
+75,Nt,No lanza,excepciones,ejecutar el código,Throws.Nothing,—,Una prueba que no lanza ya pasa
+76,Xe,Excepción esperada por atributo,excepciones,nunca existió,eliminado en NUnit 3,eliminado en MSTest 4,Ocultaba en qué línea se lanzaba
+77,Tk,Token de cancelación,excepciones,TestContext.Current.CancellationToken,parámetro CancellationToken,TestContext.CancellationToken,Se cancela por tiempo máximo o por el usuario
+78,Rs,Eventos,excepciones,Assert.Raises · RaisesAsync,—,—,
+79,Pc,PropertyChanged,excepciones,Assert.PropertyChanged,—,—,Útil en modelos MVVM
+80,Sk,Omitir,control,"[Fact(Skip = ""…"")]","[Ignore(""…"")]","[Ignore(""…"")]",MSTEST0066 exige justificar el [Ignore]
+81,Sd,Omitir en ejecución,control,Assert.Skip · SkipWhen,Assert.Ignore,Assert.Inconclusive,
+82,Iu,Omitir hasta una fecha,control,—,[Ignore(Until = …)],—,Al vencer la fecha la prueba vuelve a fallar
+83,Ca,Categoría,control,"[Trait(""Category"", …)]",[Category],[TestCategory],
+84,Pt,Propiedad clave-valor,control,"[Trait(k, v)]","[Property(k, v)]","[TestProperty(k, v)]",
+85,Os,Sistema operativo,control,SkipUnless + OperatingSystem,"[Platform(""Win"")]",[OSCondition],"NUnit 5 cambió el significado de ""NET"""
+86,Cs,Solo en integración continua,control,—,—,[CICondition],
+87,Cu,Cultura,control,culture en xunit.runner.json,[SetCulture],—,
+88,De,Descripción,control,—,[Description],[Description],
+89,Au,Autor,control,—,[Author],[Owner],
+90,Wi,Elemento de trabajo,control,—,—,[WorkItem] · [GitHubWorkItem],Se conservan en los informes TRX
+91,Py,Prioridad,control,—,—,[Priority],Metadato: no cambia el orden
+92,Pd,Paralelismo por defecto,paralelo,entre colecciones,desactivado,desactivado,En xUnit cada clase es una colección
+93,Pz,Activar paralelismo,paralelo,activo por defecto · modo total (4.0),[Parallelizable(ParallelScope.All)],[assembly: Parallelize],
+94,Np,Desactivar en un punto,paralelo,[CollectionDefinition(DisableParallelization = true)],[NonParallelizable],[DoNotParallelize],
+95,Wk,Grado de paralelismo,paralelo,maxParallelThreads,[LevelOfParallelism(n)],Parallelize(Workers = n),
+96,Rl,Exclusión por recurso,paralelo,misma [Collection],—,[ResourceLock] (4.4),Serializa solo las pruebas que tocan el mismo recurso
+97,To,Tiempo máximo,paralelo,[Fact(Timeout = ms)],[CancelAfter(ms)],[Timeout(ms)],Cooperativo: requiere observar el token
+98,Mt,Duración medida,paralelo,—,"[MaxTime(ms, WarningTime = …)]",—,"Falla si tarda más, pero no la interrumpe"
+99,Re,Reintento,paralelo,—,[Retry(n)],[Retry(n)],Esconder pruebas inestables tiene costo
+100,Rp,Repetición,paralelo,—,[Repeat(n)],—,NUnit 5: RequiredPassPercentage
+101,St,Hilo STA,paralelo,—,[Apartment(STA)],[STATestMethod],Necesario para WPF y WinForms
+102,Ro,Orden aleatorio,paralelo,—,—,opción de orden aleatorio (4.3),Detecta dependencias ocultas entre pruebas
+103,Tc,Contexto de prueba,contexto,TestContext.Current,TestContext.CurrentContext,TestContext,xUnit lo incorporó en v3
+104,Ou,Salida de la prueba,contexto,ITestOutputHelper,TestContext.Out,TestContext.WriteLine,
+105,At,Adjuntos,contexto,TestContext.Current.AddAttachment,TestContext.AddTestAttachment,TestContext.AddResultFile,
+106,Tn,Nombre de la prueba,contexto,Test.TestDisplayName,Test.Name,TestContext.TestName,
+107,Ts,Resultado en la limpieza,contexto,TestContext.Current.TestState,Result.Outcome,CurrentTestOutcome,Para guardar evidencias solo si falló
+108,Kv,Almacén clave-valor,contexto,KeyValueStorage,Test.Properties,TestContext.Properties,
+109,Wd,Directorio de trabajo,contexto,—,WorkDirectory,TestRunDirectory · TestTempDirectory (4.4),
+110,Dm,Diagnóstico en vivo,contexto,SendDiagnosticMessage,TestContext.Progress,TestOutputCaptureMode (4.4),
+111,Pk,Paquete principal,plataforma,xunit.v3,NUnit,MSTest · MSTest.Sdk,
+112,Va,Adaptador VSTest,plataforma,xunit.runner.visualstudio,NUnit3TestAdapter,MSTest.TestAdapter,
+113,Mp,Microsoft.Testing.Platform,plataforma,integrado (v2 por defecto),EnableNUnitRunner,EnableMSTestRunner,Las pruebas son un ejecutable
+114,Cg,Configuración,plataforma,xunit.runner.json,NUnit en .runsettings,testconfig.json · .runsettings,
+115,Az,Analizadores,plataforma,xunit.analyzers (incluido),NUnit.Analyzers,MSTest.Analyzers (incluido),
+116,Ao,Native AOT,plataforma,xunit.v3.core.aot (4.0),—,generación de código (experimental),
+117,Ep,Punto de extensión,plataforma,ITestFramework · DataAttribute,ITestAction · IWrapTestMethod,TestMethodAttribute · ConditionBaseAttribute,
+118,Cr,Ejecutor de consola,plataforma,xunit.v3.runner.console,nunit3-console · NUnitLite,el propio ejecutable,
+119,Fi,Filtrado,plataforma,--filter-class · --filter-trait,"--filter ""Category=X""","--filter ""TestCategory=X""",Sintaxis de filtros distinta por framework
+120,Rt,Formato de resultados,plataforma,XML xUnit · JUnit · CTRF · TRX,TestResult.xml · TRX,TRX,
+121,Pa,Particionado en CI,plataforma,—,—,--partition (5.0),Repartir la suite entre agentes
